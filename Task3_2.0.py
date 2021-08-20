@@ -166,8 +166,8 @@ class mainCode():
                     cv.line(img,(fromNode.ordinate, fromNode.abcissa), (toNode.ordinate, toNode.abcissa), (255,255,255), 1)
                     fromNode = toNode
                     break
-                elif (num>8):
-                    num = 5
+                else:
+                    num /= 2
                     toNode = fromNode.parentNode
                 
             if(check1 == True and check2 == True):
